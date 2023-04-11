@@ -27,6 +27,7 @@ choco install bitwarden -y
 
 echo  "install PSWindowsUpdate"
 # Install PSWindowsUpdate
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module -Name PSWindowsUpdate -Force
 #windows update
 Install-WindowsUpdate -AcceptAll -IgnoreReboot
